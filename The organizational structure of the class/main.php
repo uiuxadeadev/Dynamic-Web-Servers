@@ -1,10 +1,12 @@
 <?php
-require_once 'Interfaces/Engine.php';
-require_once 'Engines/GasolineEngine.php';
-require_once 'Engines/ElectricEngine.php';
-require_once 'Cars/Car.php';
-require_once 'Cars/GasCar.php';
-require_once 'Cars/ElectricCar.php';
+// require_once 'Interfaces/Engine.php';
+// require_once 'Engines/GasolineEngine.php';
+// require_once 'Engines/ElectricEngine.php';
+// require_once 'Cars/Car.php';
+// require_once 'Cars/GasCar.php';
+// require_once 'Cars/ElectricCar.php';
+spl_autoload_extensions(".php"); 
+spl_autoload_register();
 
 $gasCar = new Cars\GasCar('Toyota');
 $electricCar = new Cars\ElectricCar('Tesla');
