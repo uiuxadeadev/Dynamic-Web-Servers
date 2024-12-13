@@ -1,1 +1,24 @@
 .devcontainer
+
+# Composer関連
+/vendor/
+composer.phar
+
+# IDE関連
+.idea/
+.vscode/
+
+# キャッシュや一時ファイル
+*.log
+*.cache
+.php_cs.cache
+.phpunit.result.cache
+
+# 環境設定ファイル
+.env
+.env.local
+.env.*.local
+
+# その他
+/node_modules/
+/dist/
